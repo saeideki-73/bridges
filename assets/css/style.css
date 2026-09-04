@@ -252,3 +252,37 @@ section.tight{padding:64px 0;}
 footer{background:var(--steel-deep); color:#9fb0b6; padding:36px 0; font-family:var(--font-mono); font-size:12.5px;}
 footer .wrap{display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px;}
 footer a{color:#cdd8db;}
+
+/* ---------- INDIVIDUAL PROFILE PAGES ---------- */
+.profile-head{display:grid; grid-template-columns:auto 1fr; gap:36px; align-items:start;}
+@media (max-width:700px){ .profile-head{grid-template-columns:1fr; text-align:center;} .profile-head .photo-frame{margin:0 auto;} }
+.profile-head .photo-frame{width:160px; height:160px; border-radius:50%; flex-shrink:0;}
+.profile-head .photo-frame .avatar-fallback{font-size:46px;}
+.profile-head h1{font-size:clamp(26px,3.6vw,34px); color:#fff;}
+.profile-dept{font-family:var(--font-mono); font-size:13px; color:#cdd8db; line-height:1.7; margin-top:10px;}
+.link-row{display:flex; flex-wrap:wrap; gap:10px; margin-top:18px;}
+.link-row a{
+  font-family:var(--font-mono); font-size:12px; text-transform:uppercase; letter-spacing:.04em;
+  color:#eef1f0; border:1px solid rgba(255,255,255,.35); padding:8px 16px; text-decoration:none;
+  border-radius:2px; transition:border-color .15s, background .15s;
+}
+.link-row a:hover{border-color:#fff; background:rgba(255,255,255,.08);}
+.profile-section{margin-bottom:48px;}
+.profile-section h2{font-size:20px; margin-bottom:18px; padding-bottom:10px; border-bottom:1px solid var(--line);}
+.profile-section p{margin:0 0 16px; max-width:75ch;}
+.qual-list{list-style:none; margin:0; padding:0;}
+.qual-list li{
+  padding:14px 0; border-top:1px solid var(--line); font-size:15.5px;
+}
+.qual-list li:last-child{border-bottom:1px solid var(--line);}
+.qual-list .degree{font-family:var(--font-display); font-weight:600; color:var(--steel-deep); display:block;}
+.qual-list .thesis{font-size:14px; color:#4a5256; font-style:italic; display:block; margin-top:4px;}
+.cite-list{margin:0; padding-left:26px; font-family:var(--font-body); font-size:15px; color:#33393c; line-height:1.6;}
+.cite-list li{margin-bottom:14px;}
+.cite-list a{color:var(--rust); text-decoration:none; font-family:var(--font-mono); font-size:13px;}
+.cite-list a:hover{text-decoration:underline;}
+.back-link{font-family:var(--font-mono); font-size:12.5px; text-transform:uppercase; letter-spacing:.04em; color:var(--rust); text-decoration:none;}
+.missing-note{
+  font-family:var(--font-mono); font-size:12px; color:var(--rust); text-transform:uppercase;
+  letter-spacing:.03em; border:1px dashed var(--rust); padding:10px 14px; display:inline-block; margin-top:8px;
+}
