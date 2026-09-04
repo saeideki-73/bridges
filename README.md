@@ -9,7 +9,16 @@ index.html          Home
 about.html           About the lab
 news.html            News & events (collapsible entries)
 projects.html        Research projects
-people.html          Team
+people.html          Team (links to individual profile pages below)
+people/
+  mehdi-kashani.html        Individual profile pages, one per
+  ziliang-zhang.html        team member with photo, bio,
+  masoud-mohandes.html      qualifications, publications and
+  hossein-agha-beigi.html   contact/ORCID/Scholar/ResearchGate
+  saba-ghassemi.html        links
+  saeid-ekraminia.html
+  hailong-cao.html
+  karl-minta.html
 publications.html    Publications (collapsible by category)
 contact.html         Contact
 home/index.html      Redirect only — keeps old Google Sites URL (/home) alive, e.g. for your QR code
@@ -17,10 +26,19 @@ assets/
   css/style.css      All styling
   images/
     logo.png                     ← drop your logo here
-    people/<name>.jpg            ← one photo per team member
+    people/<name>.jpg            ← one photo per team member (see filenames below)
     projects/<id>-<slug>.jpg     ← one photo per project
     events/<id>-<slug>.jpg       ← one photo per news/event item
 ```
+
+Amirreza Zarei doesn't have a dedicated profile page yet — send over his
+bio/qualifications/publications in the same format as the others and I'll
+add `people/amirreza-zarei.html`.
+
+**Karl Minta's page** is missing contact links (email/Scholar/ORCID/
+ResearchGate) — the details you sent for him matched Saba Ghassemi's, so
+they were left out rather than publish the wrong contact info under his
+name. Send the correct ones and I'll add them.
 
 ## Keeping old links and QR codes working
 
@@ -47,7 +65,7 @@ no code changes needed:
 **People** (`assets/images/people/`)
 - `mehdi-kashani.jpg`
 - `ziliang-zhang.jpg`
-- `masood-mohandes.jpg`
+- `masoud-mohandes.jpg`
 - `hossein-agha-beigi.jpg`
 - `saba-ghassemi.jpg`
 - `saeid-ekraminia.jpg`
