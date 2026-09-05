@@ -8,7 +8,16 @@ Static, framework-free site (plain HTML/CSS). No build step — ready to push to
 index.html          Home
 about.html           About the lab
 news.html            News & events (collapsible entries)
-projects.html        Research projects
+projects.html        Research projects (links to individual project pages below)
+projects/
+  p01-heavy-axle-load-capacity.html       Individual project pages, one per
+  p02-corrosion-smooth-reinforcement.html project, with aims, main body of
+  p03-railway-earthwork-stability.html    work, and a photo gallery at the
+  p04-rc-slabs-fibre-optic.html           end (album/bar/pair layout
+  p05-composite-segmental-bridges.html    depending on the project)
+  p06-next-gen-bridge-design.html
+  p07-corroded-bridge-columns.html
+  p08-crossrail-elizabeth-line.html
 people.html          Team (links to individual profile pages below)
 people/
   mehdi-kashani.html        Individual profile pages, one per
@@ -74,14 +83,17 @@ no code changes needed:
 - `amirreza-zarei.jpg`
 
 **Projects** (`assets/images/projects/`)
-- `p01-heavy-axle-load-capacity.jpg`
-- `p02-corrosion-smooth-reinforcement.jpg`
-- `p03-railway-earthwork-stability.jpg`
-- `p04-rc-slabs-fibre-optic.jpg`
-- `p05-composite-segmental-bridges.jpg`
-- `p06-next-gen-bridge-design.jpg`
-- `p07-corroded-bridge-columns.jpg`
-- `p08-crossrail-elizabeth-line.jpg`
+- Card thumbnail (shown on `projects.html`): `p01-heavy-axle-load-capacity.jpg`, `p02-corrosion-smooth-reinforcement.jpg`, etc. (one flat file per project, filenames as listed above)
+- Gallery photos (shown at the bottom of each project's own page): inside a folder named after the project, numbered in order —
+  `assets/images/projects/p01-heavy-axle-load-capacity/1.jpg`, `2.jpg`, `3.jpg`, `4.jpg`
+  `assets/images/projects/p02-corrosion-smooth-reinforcement/1.jpg`, `2.jpg`, `3.jpg`
+  `assets/images/projects/p03-railway-earthwork-stability/1.jpg`, `2.jpg`
+  `assets/images/projects/p04-rc-slabs-fibre-optic/1.jpg`, `2.jpg`
+  `assets/images/projects/p05-composite-segmental-bridges/1.jpg`, `2.jpg`
+  `assets/images/projects/p06-next-gen-bridge-design/1.jpg`, `2.jpg`
+  `assets/images/projects/p07-corroded-bridge-columns/1.jpg`, `2.jpg`, `3.jpg`, `4.jpg`
+  `assets/images/projects/p08-crossrail-elizabeth-line/1.jpg`, `2.jpg`
+  (the empty folders are already included in this export, ready for your photos)
 
 **Events** (`assets/images/events/`)
 - `e01-revive-workshop.jpg`

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hydro-mechanical effects of climate change on railway earthwork stability &mdash; Bridges to the Future</title>
+<meta name="description" content="Investigating how climate-driven hydro-mechanical processes affect the long-term stability of railway earthworks and embankments.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<header class="site">
+  <div class="navbar">
+    <a class="brand" href="../index.html">
+      <img class="logo-img" src="../assets/images/logo.png" alt="Bridges to the Future logo" onerror="this.style.display='none'">
+      <span class="brandtext">Bridges to the Future <small>B2F</small></span>
+    </a>
+    <input type="checkbox" id="nav-toggle">
+    <label class="burger" for="nav-toggle"><span></span><span></span><span></span></label>
+    <nav class="links">
+      <a href="../index.html">Home</a>
+      <a href="../about.html">About</a>
+      <a href="../news.html">News</a>
+      <a href="../projects.html" aria-current="page">Research</a>
+      <a href="../people.html">People</a>
+      <a href="../publications.html">Publications</a>
+      <a href="../contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="pagehero">
+  <div class="wrap">
+    <p class="eyebrow">P03 &nbsp;&middot;&nbsp; Research project</p>
+    <h1>Hydro-mechanical effects of climate change on railway earthwork stability</h1>
+    <p class="proj-meta-row"><a href="people/saeid-ekraminia.html">Saeid Ekraminia</a></p>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <p style="margin-bottom:40px;"><a class="back-link" href="../projects.html">&larr; Back to projects</a></p>
+    <div class="profile-section">
+      <h2>Research aims and scope</h2>
+      <p>Network Rail manages over 187,000 earthwork slopes (embankments, soil cuttings and rock cuttings) across the UK rail network. A changing climate &mdash; specifically, changes in the intensity, frequency and persistence of rainfall, and in the frequency and severity of drought &mdash; is expected to alter both the rate at which these assets gradually deteriorate and the rate at which they suffer discrete, catastrophic failures (slips, slides, washouts). The overarching aim of this research is to build and rigorously validate a probabilistic, data-driven methodology that quantifies this relationship, so that climate-attributable risk can be projected forward and used to inform asset-management prioritisation.</p><p>Specific objectives</p><ul class="plain-list"><li>Construct a single, continuous chronological condition-grade timeline for every asset from disparate inspection, condition and discrete-failure records.</li><li>Engineer a comprehensive set of physically-motivated rainfall and drought stress metrics from 1 km gridded historical observations and RCP 6.0 climate projections, matched precisely to each asset's own location and inspection history.</li><li>Develop a Continuous-Time Markov Chain (CTMC) framework capable of representing both gradual, grade-by-grade deterioration and sudden catastrophic failure within a single coherent probabilistic model, in which climate stress accelerates transition rates via a proportional-hazards mechanism.</li><li>Test, empirically rather than by assumption, two structural questions: whether assets can skip condition grades under severe stress, and whether the asset population is truly homogeneous or is better described as a minority of intrinsically ‘Vulnerable’ assets embedded within a ‘Robust’ majority.</li><li>Produce decadal risk projections to the 2080s under RCP 6.0 versus a historical baseline, to isolate the specific, climate-attributable share of future degradation and failure risk.</li></ul><p>The current phase of work is scoped to the embankment population only, run end to end; the identical pipeline is designed to be replicated for soil and rock cuttings in a subsequent phase, using the same data architecture and geology-attribution logic adapted to their respective structural fields.</p>
+    </div>
+    <div class="profile-section">
+      <h2>Main body of work</h2>
+      <p>Cleaned and merged Last Known Condition, Record History and discrete Failure-event datasets into a single per-asset chronological timeline; calculated embankment geometry (height, slope angle) from structural survey fields; attributed every asset to a geotechnical cohort via JBA lithology mapping; and extracted every consecutive pair of inspections as a discrete state-to-state condition transition &mdash; the fundamental unit of analysis for all subsequent modelling.</p><p>For every transition, extracted the exact daily rainfall experienced by that specific asset over that specific time window, and computed 23 rainfall/drought-stress metrics across five physically-motivated families (extreme intensity, frequency, persistence, chronic baseline, and drought/desiccation), each standardised four ways (Global, Local and Regional Z-scores, and the Standardised Precipitation Index) so that stress is comparable fairly across the country, over time, and across geology types. The same metrics were then extracted for five future decades from RCP 6.0 climate projections.</p><p>Following preliminary exploratory regression modelling, developed a six-state CTMC framework in which a generator matrix's transition rates are accelerated by climate stress through a proportional-hazards multiplier, fitted by maximum likelihood on the exact panel-data likelihood of observed transitions. Four structurally distinct model families were built and rigorously compared, in a 2&times;2 design: 9-parameter and 15-parameter transition structures (testing whether assets can skip condition grades), each fitted as a single homogeneous population and as a two-class Expectation-Maximisation latent-vulnerability mixture (testing whether a distinct ‘Vulnerable’ sub-population exists and addressing the severe class imbalance found to dilute climate sensitivity in the single-population models). Mixture-model baseline rates were further refined under explicit physical monotonicity constraints, solved via Sequential Least Squares Programming.</p>
+    </div>
+    
+    <div class="profile-section">
+      <h2>Gallery</h2>
+      <div class="gallery-default"><figure class="gphoto">
+          <div class="photo-frame ">
+          <img src="../assets/images/projects/p03-railway-earthwork-stability/1.jpg" alt="p03-railway-earthwork-stability photo 1" loading="lazy" onerror="this.style.display='none'">
+          <div class="avatar-fallback">1</div>
+        </div>
+          
+        </figure><figure class="gphoto">
+          <div class="photo-frame ">
+          <img src="../assets/images/projects/p03-railway-earthwork-stability/2.jpg" alt="p03-railway-earthwork-stability photo 2" loading="lazy" onerror="this.style.display='none'">
+          <div class="avatar-fallback">2</div>
+        </div>
+          
+        </figure></div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <span>&copy; Bridges to the Future &middot; University of Southampton</span>
+    <span>National Infrastructure Laboratory &middot; bridges2f.com</span>
+
+  </div>
+</footer>
+</body>
+</html>
