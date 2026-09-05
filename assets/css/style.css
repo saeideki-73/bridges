@@ -103,10 +103,10 @@ nav.links a:hover, nav.links a[aria-current="page"]{border-color:var(--rust); co
 .hero-photo-col .photo-frame{position:absolute; inset:0; width:100%; height:100%; border-radius:0; background:var(--steel-deep);}
 .hero-photo-col .photo-frame img{border-radius:0;}
 .hero-photo-col .photo-frame .avatar-fallback{padding:40px;}
-@media (max-width:900px){
+@media (max-width:640px){
   .hero-flex{grid-template-columns:1fr;}
   .hero-text-col{padding:56px 28px 32px;}
-  .hero-photo-col{min-height:260px;}
+  .hero-photo-col{min-height:220px;}
 }
 .hero h1{color:#fff; font-size:clamp(38px,5.4vw,64px); font-weight:700; letter-spacing:-.015em;}
 .hero h1 em{font-style:normal; color:var(--rust-bright);}
@@ -193,8 +193,8 @@ section.tight{padding:64px 0;}
 /* news items — photo + title always visible; only the long description collapses */
 .news-item{background:var(--paper); border:1px solid var(--line); margin-bottom:14px;}
 .news-visible{display:flex; gap:20px; align-items:center; padding:22px 26px;}
-.news-visible .photo-frame{width:150px; height:104px; border-radius:2px; flex-shrink:0;}
-.news-visible .photo-frame .avatar-fallback{font-size:11px; font-family:var(--font-mono); text-transform:uppercase; letter-spacing:.04em; text-align:center; padding:0 10px;}
+.news-visible .photo-frame{width:225px; height:156px; border-radius:2px; flex-shrink:0;}
+.news-visible .photo-frame .avatar-fallback{font-size:12.5px; font-family:var(--font-mono); text-transform:uppercase; letter-spacing:.04em; text-align:center; padding:0 12px;}
 .news-text{flex:1; min-width:0;}
 .news-text h3{font-size:17px; line-height:1.3; margin:8px 0 6px;}
 .news-item details{border-top:1px solid var(--line);}
@@ -211,7 +211,7 @@ section.tight{padding:64px 0;}
 .news-item .news-desc p{margin:0 0 14px; font-size:15.5px; color:#33393c;}
 @media (max-width:560px){
   .news-visible{flex-direction:column; align-items:flex-start;}
-  .news-visible .photo-frame{width:100%; height:150px;}
+  .news-visible .photo-frame{width:100%; height:225px;}
 }
 .entry-list details{background:var(--paper); border:1px solid var(--line); margin-bottom:14px;}
 .entry-list summary{
