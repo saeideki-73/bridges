@@ -68,8 +68,9 @@ placeholder with initials or a short label), so the site is safe to publish
 as-is. To swap in a real photo, save it with **exactly** this filename —
 no code changes needed:
 
-**Logo**
-- `assets/images/logo.png`
+**Logos**
+- `assets/images/logo.png` — your site logo. Used in the nav bar on every page, and reused automatically in the footer.
+- `assets/images/logos/southampton-logo.png` — University of Southampton logo, shown next to your site logo in the footer of every page. Until added, both show a clean text fallback ("University of Southampton" / "Bridges to the Future") in a white badge, so the site is safe to publish either way. Logos are shown at a small fixed height (26px) inside a white chip, so a transparent-background PNG works best.
 
 **People** (`assets/images/people/`)
 - `mehdi-kashani.jpg`
