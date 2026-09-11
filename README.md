@@ -137,3 +137,10 @@ There's no CMS — text lives directly in the HTML files. Open the relevant
 page in any text editor, find the text, and edit it directly. The
 publications and news sections use `<details>`/`<summary>` for the
 collapsible panels; keep that structure when adding new entries.
+
+The footer on every page includes a full sitemap, the Boldrewood Innovation
+Campus address (Burgess Road, Southampton SO16 7QF — the University's own
+published address), and a contact email. If the lab's contact point
+should be someone other than Dr Kashani, update the `mailto:` link and
+email text in each page's `<div class="footer-contact">` block (or ask for
+a find-and-replace across all files).
