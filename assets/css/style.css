@@ -385,3 +385,24 @@ figure.gphoto figcaption{font-family:var(--font-mono); font-size:12px; color:var
 .photo-gallery .photo-frame{width:100%; aspect-ratio:4/3; border-radius:2px;}
 .photo-gallery figcaption{font-family:var(--font-mono); font-size:12px; color:var(--steel); margin-top:8px; line-height:1.5;}
 .contrib-line{font-family:var(--font-mono); font-size:12.5px; color:#cdd8db; text-transform:uppercase; letter-spacing:.03em; margin-top:6px;}
+
+/* ---------- EVENT PAGE ---------- */
+.event-figure{margin:0 0 48px; background:#fff; border:1px solid var(--line);}
+.event-figure img{display:block; width:100%; height:auto;}
+.programme{list-style:none; margin:0; padding:0; border-top:1px solid var(--line);}
+.programme li{display:grid; grid-template-columns:128px 1fr 250px; gap:6px 28px; padding:15px 0; border-bottom:1px solid var(--line); align-items:baseline;}
+.programme .time{font-family:var(--font-mono); font-size:13px; color:var(--steel);}
+.programme .what{font-size:15.5px; color:var(--ink); line-height:1.45;}
+.programme .who{font-size:14px; color:#4a5256; line-height:1.4;}
+.programme .who strong{display:block; font-family:var(--font-display); font-weight:600; color:var(--steel-deep); font-size:14.5px;}
+.programme .who a{color:inherit;}
+.programme li.keynote .what{font-family:var(--font-display); font-weight:600; color:var(--steel-deep);}
+.programme li.keynote .kn{display:block; font-family:var(--font-mono); font-weight:500; font-size:11.5px; color:var(--rust); letter-spacing:.04em; margin-bottom:3px;}
+.programme li.pause{background:rgba(22,38,47,.045); padding-left:14px; padding-right:14px;}
+.programme li.pause .what{color:var(--steel); font-style:italic;}
+.partner-list{list-style:none; margin:0 0 18px; padding:0; display:flex; flex-wrap:wrap; gap:8px 10px;}
+.partner-list li{border:1px solid var(--line); background:var(--paper); padding:7px 13px; font-size:14px; color:var(--steel-deep);}
+@media (max-width:760px){
+  .programme li{grid-template-columns:1fr; gap:4px;}
+  .programme li.pause{padding-left:12px; padding-right:12px;}
+}
