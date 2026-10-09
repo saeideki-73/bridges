@@ -22,7 +22,7 @@ people.html          Team (links to individual profile pages below)
 people/
   mehdi-kashani.html        Individual profile pages, one per
   ziliang-zhang.html        team member with photo, bio,
-  masoud-mohandes.html      qualifications, publications and
+  masood-mohandes.html      qualifications, publications and
   hossein-agha-beigi.html   contact/ORCID/Scholar/ResearchGate
   saba-ghassemi.html        links
   saeid-ekraminia.html
@@ -75,7 +75,7 @@ no code changes needed:
 **People** (`assets/images/people/`)
 - `mehdi-kashani.jpg`
 - `ziliang-zhang.jpg`
-- `masoud-mohandes.jpg`
+- `masood-mohandes.jpg`
 - `hossein-agha-beigi.jpg`
 - `saba-ghassemi.jpg`
 - `saeid-ekraminia.jpg`
